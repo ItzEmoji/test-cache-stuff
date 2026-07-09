@@ -1,0 +1,16 @@
+jobs:
+  cache:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      packages: write
+    steps:
+      - uses: actions/checkout@v5
+      - uses: DeterminateSystems/nix-installer-action@v20
+      - uses: ItzEmoji/aeroflare@v1
+        with:
+          cache: ghcr.io;${{ github.repository_owner }}/cache-action-test
+          builds: |
+            nixpkgs#hello
+          env:
+            AEROFLARE_REPO: ItzEmoji/aeroflare-test

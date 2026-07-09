@@ -16,6 +16,6 @@ jobs:
         with:
           cache: ghcr.io;itzemoji/cache-action-test
           builds: |
-            nixpkgs#hello
+            github:ItzEmoji/nvim#default
         env:
           AEROFLARE_REPO: ItzEmoji/aeroflare-test

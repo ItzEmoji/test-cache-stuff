@@ -17,6 +17,6 @@ jobs:
           cache: ghcr.io;itzemoji/cache-action-test-new-v-10
           builds: |
             github:ItzEmoji/nvim#default
-       #   upstream-cache: https://cache.nixos.org
+            upstream-cache: https://cache.nixos.org
         env:
           AEROFLARE_REPO: ItzEmoji/aeroflare-test

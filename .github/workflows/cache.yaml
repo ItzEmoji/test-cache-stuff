@@ -12,9 +12,9 @@ jobs:
     steps:
       - uses: actions/checkout@v5
       - uses: DeterminateSystems/nix-installer-action@v20
-      - uses: ItzEmoji/aeroflare-test@v1.10.4
+      - uses: ItzEmoji/aeroflare-test@v1.10.5
         with:
-          cache: ghcr.io;itzemoji/cache-action-test-new-v-10-4
+          cache: ghcr.io;itzemoji/cache-action-test-new-v-10-5
           builds: |
             github:ItzEmoji/nvim#default
           upstream-cache: https://cache.nixos.org

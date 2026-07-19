@@ -14,7 +14,7 @@ jobs:
       - uses: DeterminateSystems/nix-installer-action@v20
       - uses: ItzEmoji/aeroflare@v1
         with:
-          cache: ghcr.io;itzemoji/actual-test
+          cache: ghcr.io;itzemoji/actual-test-v-20
           builds: |
             github:ItzEmoji/nvim#default
           upstream-cache: https://cache.nixos.org

@@ -14,9 +14,6 @@ jobs:
       - uses: DeterminateSystems/nix-installer-action@v20
       - uses: ItzEmoji/aeroflare@v1
         with:
-          cache: ghcr.io;itzemoji/nix-packages-cache
-          builds: |
-            github:ItzEmoji/nvim#default
-          upstream-cache: https://cache.nixos.org
+          config: aeroflare-config.yaml
         env:
           NIX_SIGNING_KEY: ${{ secrets.NIX_SIGNING_KEY }}

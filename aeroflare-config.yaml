@@ -1,7 +1,6 @@
-builds:
-  - github:ItzEmoji/nvim
+builds: all
 caches:
-  - ghcr.io;itzemoji/nix-packages-cache      
+  - ghcr.io;itzemoji/test-cache
 
 compression: zstd
 workers: 50

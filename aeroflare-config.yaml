@@ -1,4 +1,5 @@
-builds: all
+builds: 
+  - all
 caches:
   - ghcr.io;itzemoji/test-cache
 

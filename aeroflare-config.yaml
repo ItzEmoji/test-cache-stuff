@@ -5,6 +5,6 @@ caches:
 compression: zstd
 workers: 50
 signing-key: NIX_SIGNING_KEY
-
+release-repo: ItzEmoji/aeroflare-test
 upstream-cache:
   - https://cache.nixos.org
